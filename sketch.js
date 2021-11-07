@@ -8,8 +8,7 @@ var divisions=[];
 var divisionsHeight=300;
 var particles=[];
 var plinkos=[];
-//var arr=[[1,12,3,14,5]["riya","siya","meera","jiya","pooja"]]; 
-//console.log(arr[0][1]);
+;
 
 function preload() {
     //backgroundImg = loadImage("sprites/bg.png");
@@ -22,7 +21,6 @@ function setup(){
 
 
     ground = new Ground(400,690,800,20);
-    //platform = new Ground(150, 305, 300, 170);
 
     for(var i=0;i<=width;i=i+80){
       divisions.push(new Division(i,height-divisionsHeight/2,10,divisionsHeight))
@@ -69,16 +67,3 @@ function draw(){
   
     
 }
-
-//function mouseDragged(){
-    //Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
-//}
-
-
-//function mouseReleased(){
-   //slingshot.fly();
-//}
-//function keyPressed(){
-    //if(keyCode===32)
-    //slingshot.attach(bird.body);
-//}
