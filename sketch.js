@@ -10,10 +10,6 @@ var particles=[];
 var plinkos=[];
 ;
 
-function preload() {
-    //backgroundImg = loadImage("sprites/bg.png");
-}
-
 function setup(){
     createCanvas(800,700);
     engine = Engine.create();
