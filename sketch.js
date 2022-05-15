@@ -21,17 +21,11 @@ function setup(){
     for(var i=0;i<=width;i=i+80){
       divisions.push(new Division(i,height-divisionsHeight/2,10,divisionsHeight))
     }
-    for(var j=75;j<=width;j=j+50){
+    for(var j=40;j<=width;j=j+50){
       plinkos.push(new Plinko(j,75));
     }
-    for(var j=50;j<=width-10;j=j+50){
+    for(var j=15;j<=width-10;j=j+50){
       plinkos.push(new Plinko(j,175));
-    }
-    for(var j=75;j<=width;j=j+50){
-      plinkos.push(new Plinko(j,275));
-    }
-    for(var j=50;j<=width-10;j=j+50){
-      plinkos.push(new Plinko(j,375));
     }
 
 
@@ -52,12 +46,6 @@ function draw(){
     }
     for(var h=0;h<=particles.length;h++){
       particles[h].display();
-    }
-    for(var j=0;j<=plinkos.length;j++){
-      plinkos[j].display();
-    }
-    for(var j=0;j<=plinkos.length;j++){
-      plinkos.push(new Plinko(j,75))
     }
     ground.display();
   
