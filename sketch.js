@@ -8,7 +8,6 @@ var divisions=[];
 var divisionsHeight=300;
 var particles=[];
 var plinkos=[];
-;
 
 function setup(){
     createCanvas(800,700);
